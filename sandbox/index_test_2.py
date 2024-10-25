@@ -35,7 +35,9 @@ index = index_creator.from_loaders([loader])
 query = "What happened in Cannes?"
 response = index.query(query, llm=llm)
 
-index.query_with_sources(query, llm=llm)
+response_2 = index.query_with_sources(query, llm=llm)
+
+print()
 
 print()
 
